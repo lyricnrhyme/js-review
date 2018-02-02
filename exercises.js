@@ -208,6 +208,11 @@ console.log(Bteam);
 "The location at i is:  ."  and append the value of i and the value stored within the Array at that index to this string.
 
 i.e. "The locaton at 0 is Tokyo."*/
+/*var japanPrefectures = ["Kumamoto", "Okinawa", "Saga", "Oita", "Tokyo"];*/
+
+for (var i=0; i<japanPrefectures.length; i++){
+  console.log("The location at " + i + " is " + japanPrefectures[i] + ".");
+}
 
 /*18. Declare a function named addUp.
 This function will take a number parameter and add up all the numbers from 1 to that number.
