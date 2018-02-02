@@ -134,6 +134,15 @@ console.log(hotel);
 
  console log the object*/
 
+ var car = {
+  make: "BMW",
+  model: "X5",
+  year: 2015,
+  doors: 4
+ };
+
+ console.log(car);
+
 /*14.  Declare a literal object named bigBox and set its value to be an empty object.
 
 Add a property named size and set it to a random number value between 0 and 50 (hint, use Math.something...)
