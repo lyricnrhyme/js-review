@@ -100,6 +100,13 @@ b) a string and a number "three" and 3
 
 console log each variable*/
 
+var palindrome = "Racecar" === "racecar";
+var numValue = "three" === 3;
+
+console.log(palindrome);
+console.log(numValue);
+
+
 /*12.  Declare a literal object named "hotel" with properties and values set to:
 
     name    => "Hilton"
