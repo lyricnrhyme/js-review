@@ -275,6 +275,28 @@ console.log(bigBox.contents);
 
 /*22.  Declare a function named firstReverse which takes a single parameter str.  This function will take a string parameter being passed in and return the string in reverse order.*/
 
+var strExample = "I am an example string.";
+
+function firstReverse(str) {
+  var strArr = str.split(" ");
+  var newStr = [];
+  // console.log(strArr); ['I', 'am', 'an', 'example', 'string.']
+  for (var i=strArr.length-1; i>=0; i--){
+    var character = strArr[i].split("");
+    // console.log(character); Ex. ['e', 'x', 'a', 'm', 'p', 'l', 'e']
+    var newWord = [];
+    for (var j=strArr[i].length-1; j>=0; j--){
+      newWord.push(strArr[i][j]);
+    }
+    reversedWord = newWord.join("");
+    // console.log(reversedWord);
+    newStr.push(reversedWord);
+ }
+var reversedStr = newStr.join(" ");
+console.log(reversedStr);
+}
+firstReverse(strExample);
+
 /*23. Declare a function named letterCap which takes a single parameter str. This function will capitalize the first letter of the string you pass in to invoke the function. 
 */
 
