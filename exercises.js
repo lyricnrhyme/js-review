@@ -299,5 +299,18 @@ firstReverse(strExample);
 
 /*23. Declare a function named letterCap which takes a single parameter str. This function will capitalize the first letter of the string you pass in to invoke the function. 
 */
+var caps = "capitalize all the words in this string";
+
+function letterCap(str){
+  splitStr = str.split(" ");
+  for (var i=0; i<splitStr.length; i++){
+    var splitWord = splitStr[i].split("");
+    splitWord[0] = splitWord[0].toUpperCase();
+    splitStr[i] = splitWord.join("");
+  }
+  var newStr = splitStr.join(" ");
+  console.log(newStr);
+}
+letterCap(caps);
 
 /*24. Declare a function named longestWord which takes a single parameter str. This function will return the longest word in the string when you invoke this function.*/ 
